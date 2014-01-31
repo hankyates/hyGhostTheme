@@ -1,0 +1,7 @@
+{
+  "name": "hy",
+  "version": "0.1.0",
+  "dependencies": {
+    "highlight": "~7.0.1"
+  }
+}
