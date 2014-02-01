@@ -20,4 +20,5 @@ projectFilesBackup
 
 .DS_Store
 *.swp
-components
+bower_components
+assets/lib

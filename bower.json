@@ -2,6 +2,15 @@
   "name": "hy",
   "version": "0.1.0",
   "dependencies": {
-    "highlight": "~7.0.1"
+    "pure": "~0.3.0",
+    "highlightjs": "~8.0.0"
+  },
+  "exportsOverride": {
+    "highlightjs": {
+      "main": [
+        "styles/zenburn.css",
+        "highlight.pack.js"
+      ]
+    }
   }
 }
