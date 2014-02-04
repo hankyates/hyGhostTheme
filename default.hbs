@@ -12,7 +12,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="shortcut icon" href="/assets/favicon.ico"}}>
-    <link rel="stylesheet" type="text/css" href="{{asset "css/screen.css"}}" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:500' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="{{asset "css/main.css"}}" />
     <link rel="stylesheet" type="text/css" href="/assets/lib/main/highlightjs/zenburn.css" />
     <link rel="stylesheet" type="text/css" href="/assets/lib/pure/pure.css" />
     {{ghost_head}}
@@ -20,9 +22,11 @@
 <body class="{{body_class}} pure-g">
 
     <section class="sidebar pure-u-1 pure-u-med-1-4" {{#if @blog.cover}}style="background-image: url({{@blog.cover}})"{{/if}}>
-      {{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" width="100" height="100" /></a>{{/if}}
-      <h1 class="blog-title">{{@blog.title}}</h1>
-      <p class="blog-description">{{@blog.description}}</p>
+      <div class="blog-info">
+        {{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" width="100" height="100" /></a>{{/if}}
+        <h1 class="blog-title">{{@blog.title}}</h1>
+        <p class="blog-description">{{@blog.description}}</p>
+      </div>
     </section>
 
     <main class="content pure-u-1 pure-u-med-3-4" role="main">
