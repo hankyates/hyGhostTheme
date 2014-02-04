@@ -1,0 +1,18 @@
+.blog-logo img {
+  border-radius: 50px;
+}
+
+@media (min-width: 48em) {
+
+  .content {
+    padding: 2em 3em 0;
+    margin-left: 25%;
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 25% !important;
+  }
+}
