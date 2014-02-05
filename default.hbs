@@ -11,12 +11,13 @@
     <meta name="MobileOptimized" content="320" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="shortcut icon" href="/assets/favicon.ico"}}>
+    <link rel="shortcut icon" href="/assets/img/favicon.ico"}}>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Ubuntu:500' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="{{asset "css/main.css"}}" />
     <link rel="stylesheet" type="text/css" href="/assets/lib/main/highlightjs/zenburn.css" />
     <link rel="stylesheet" type="text/css" href="/assets/lib/pure/pure.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.icon-large.min.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
     {{ghost_head}}
 </head>
 <body class="{{body_class}} pure-g">
@@ -26,6 +27,9 @@
         {{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" width="100" height="100" /></a>{{/if}}
         <h1 class="blog-title">{{@blog.title}}</h1>
         <p class="blog-description">{{@blog.description}}</p>
+        <a target="_blank" href="http://twitter.com/hankyates"><i class="icon-large icon-twitter"></i></a>
+        <a target="_blank" href="http://github.com/hankyates"><i class="icon-large icon-github"></i></a>
+        <a target="_blank" href="http://linkedin.com/in/hankyates"><i class="icon-large icon-linked-in"></i></a>
       </div>
     </section>
 
