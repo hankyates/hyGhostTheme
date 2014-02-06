@@ -15,14 +15,13 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Ubuntu:500' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="/assets/lib/main/highlightjs/zenburn.css" />
-    <link rel="stylesheet" type="text/css" href="/assets/lib/pure/pure.css" />
     <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.icon-large.min.css" />
     <link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
     {{ghost_head}}
 </head>
-<body class="{{body_class}} pure-g">
+<body class="{{body_class}}">
 
-    <section class="sidebar pure-u-1 pure-u-med-1-4" {{#if @blog.cover}}style="background-image: url({{@blog.cover}})"{{/if}}>
+    <section class="sidebar" {{#if @blog.cover}}style="background-image: url({{@blog.cover}})"{{/if}}>
       <div class="blog-info">
         {{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" width="100" height="100" /></a>{{/if}}
         <h1 class="blog-title">{{@blog.title}}</h1>
@@ -33,11 +32,11 @@
       </div>
     </section>
 
-    <main class="content pure-u-1 pure-u-med-3-4" role="main">
+    <main class="content" role="main">
       {{{body}}}
     </main>
 
-    <footer class="pure-u-1">
+    <footer>
         Built using <a href="http://www.glyphicons.com/">glyphicons</a>
     </footer>
 
